@@ -19,14 +19,14 @@ jobs:
 
       - name: Was transfers.json changed?
         id: prod
-        uses: tj-actions/changed-files@v18.2
+        uses: tj-actions/changed-files@v41
         with:
           files: |
             ${{ env.XCM_JSON_PATH }}
 
       - name: Was transfers_dev.json changed?
         id: dev
-        uses: tj-actions/changed-files@v18.2
+        uses: tj-actions/changed-files@v41
         with:
           files: |
             ${{ env.DEV_XCM_JSON_PATH }}
